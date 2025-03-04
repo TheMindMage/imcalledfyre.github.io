@@ -28,11 +28,13 @@
 						logInvalidCerts: true,
 						crashOnUncaughtExceptions: true,
 						servers: [
-							{ addr: "wss://mc-w4m9.onrender.com/", name: "MAIN SERVER - USE THIS ONE IF POSSIBLE" },
-							{ addr: "wss://skibidi.imcalledfyre.com/", name: "MAIN SERVER 2 - USE THIS IF YOU GET KICKED" },
-							{ addr: "wss://fyrecraft-server.vonar.ch:21859/", name: "Fyrecraft Proxy 1" },
-							{ addr: "wss://147.185.221.23:21859/", name: "Fyrecraft Proxy 2" },
-							{ addr: "ws://traffic-should.gl.at.ply.gg:21859/", name: "Fyrecraft Proxy 3" }
+                            { addr: wss://ddt-uu9b.onrender.com/", name: "Magecraft" },
+                            { addr: "wss://mageuser.imcalledfyre.com", name: "Fyrecraft" }
+                        ],
+                        relays: [
+                            { addr: "wss://relay.deev.is/", comment: "lax1dude relay #1", primary: relayId === 0 },
+                            { addr: "wss://relay.lax1dude.net/", comment: "lax1dude relay #2", primary: relayId === 1 },
+                            { addr: "wss://relay.shhnowisnottheti.me/", comment: "ayunami relay #1", primary: relayId === 2 }
 						],
 						relays: [
 							{ addr: "wss://no-way/", comment: "SINGLEPLAYER HOSTING HAS BEEN DISABLED", primary: relayId === 0 }
