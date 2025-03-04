@@ -44,16 +44,13 @@
 						localesURI: "lang/",
 						worldsDB: "worlds",
 						servers: [
-							{ addr: "wss://eagler.imcalledfyre.com", name: "Fyrecraft - Choose whichever server pops up first." },
-							{ addr: "wss://skibidi.imcalledfyre.com", name: "Fyrecraft - Choose whichever server pops up first." }
-
-						],
-						relays: [
-							{ addr: "wss://relay.deev.is/", comment: "lax1dude relay #1", primary: relayId === 0 },
-							{ addr: "wss://relay.lax1dude.net/", comment: "lax1dude relay #2", primary: relayId === 1 },
-							{ addr: "wss://relay.shhnowisnottheti.me/", comment: "ayunami relay #1", primary: relayId === 2 }
-						]
-					};
+                            { addr: wss://mc-w4m9.onrender.com/", name: "Magecraft" },
+                            { addr: "wss://mageuser.imcalledfyre.com", name: "Fyrecraft" }
+                        ],
+                        relays: [
+                            { addr: "wss://relay.deev.is/", comment: "lax1dude relay #1", primary: relayId === 0 },
+                            { addr: "wss://relay.lax1dude.net/", comment: "lax1dude relay #2", primary: relayId === 1 },
+                            { addr: "wss://relay.shhnowisnottheti.me/", comment: "ayunami relay #1", primary: relayId === 2 }
 					
 					window.__eaglercraftXLoaderContext = {
 						getEaglercraftXOpts: function() {
